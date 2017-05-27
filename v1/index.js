@@ -12,7 +12,6 @@ app.get('/', function(req, res) {
             language: language.split(',')[0],
             software: userOS
         };
-        console.log(ipAddress);
     res.send(JSON.stringify(resObj));
 });
 
