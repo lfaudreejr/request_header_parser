@@ -8,7 +8,7 @@ app.get('/', function(req, res) {
         userAgent = req.headers['user-agent'].match(/\((.+\d)\)/),
         userOS = userAgent[0].substring(1, userAgent[0].length-1);
         resObj = {
-            ipaddress: ipAddress,
+            ipaddress: ipAddress.substring(7, ipAddress.length),
             language: language.split(',')[0],
             software: userOS
         };
