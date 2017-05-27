@@ -5,13 +5,14 @@ var express = require('express'),
 app.get('/', function(req, res) {
     var ipAddress = req.ip,
         language = req.headers['accept-language'],
-        userAgent = req.headers['user-agent'],
+        userAgent = req.headers['user-agent'].match(/\((.+\d)\)/),
+        userOS = userAgent[0].substring(1, userAgent[0].length-1);
         resObj = {
             ipaddress: ipAddress,
-            language: language,
-            software: userAgent
+            language: language.split(',')[0],
+            software: userOS
         };
-
+        console.log(ipAddress);
     res.send(JSON.stringify(resObj));
 });
 
