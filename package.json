@@ -1,0 +1,30 @@
+{
+  "name": "reqheader_parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lfaudreejr/request_header_parser.git"
+  },
+  "keywords": [
+    "parse",
+    "request",
+    "headers"
+  ],
+  "author": "Larry Faudree",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lfaudreejr/request_header_parser/issues"
+  },
+  "homepage": "https://github.com/lfaudreejr/request_header_parser#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
